@@ -36,14 +36,11 @@ for i in range(len(points) - 1):
     points[i].append(length)
 points[len(points) - 1].append(0)
 
-lineDistance = 0
-for point in points:
-    lineDistance += point[3]
-
 # get the length of the interval
 interval = float(input("Enter Transect Interval (meters): "))
 interval = interval / 111139
 
+distance = (interval * 10) / 2
 
 # print coordinates
 for point in points:
